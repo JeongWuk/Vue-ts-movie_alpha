@@ -24,7 +24,7 @@
   <div class="movie-container">
     <ul>
       <li
-        v-for="(movie, index) in indexStore.movies.Search"
+        v-for="(movie, index) in indexStore.movies"
         :key="index"
         @click="showDetails(movie.imdbID)">
         <img :src="movie.Poster" />

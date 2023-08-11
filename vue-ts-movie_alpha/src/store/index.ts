@@ -65,7 +65,7 @@ export const useIndexStore = defineStore('index', {
           }
         })
         setTimeout(() => {
-          this.movies = data
+          this.movies = data.Search
           router.push('/movies')
           this.loading = !this.loading
         }, 2000)
