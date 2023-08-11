@@ -1,7 +1,7 @@
 import axios from 'axios'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 
-const { API_KEY } = process.env.VUE_APP_API_KEY
+const API_KEY = process.env.VUE_APP_API_KEY
 
 interface RequestBody {
   data: {
