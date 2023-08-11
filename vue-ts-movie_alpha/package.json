@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently npm:watch-*",
+    "watch-vite": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "vercel": "vercel dev"
+    "watch-vercel": "vercel dev --listen 2999"
   },
   "dependencies": {
     "@types/three": "^0.155.0",
@@ -23,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "concurrently": "^8.2.0",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
